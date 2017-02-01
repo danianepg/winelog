@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 	<meta charset="UTF-8">
+  	<title>Winelog App</title>
+</head>
+<body>
+<form action="/addwine" method="POST">
+	<input type="text" placeholder="name" name="name">
+	<input type="text" placeholder="type" name="type">
+	<input type="text" placeholder="year" name="year">
+	<input type="text" placeholder="price" name="price">
+	<input type="text" placeholder="stars" name="stars">
+	<input type="text" placeholder="date" name="date" id="date">
+	<button type="submit">Submit</button>
+</form>
+</body>
+<script type="text/javascript">
+	
+var date = new Date();
+var current_hour = date.getHours();
+
+document.getElementById('date').value = date;
+
+
+</script>
+</html>
